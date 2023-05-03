@@ -1,4 +1,9 @@
-# mongodb
+# MongoDB example
+[![Continuous Integration](https://github.com/SergioGasquez/mongodb-example/actions/workflows/CI.yml/badge.svg)](https://github.com/SergioGasquez/mongodb-example/actions/workflows/CI.yml)
+
+Simple example built for [esp-rust-board](https://github.com/esp-rs/esp-rust-board) that sends temperature and humidity to MongoDB, using POST method.
+
+![MongoDB Collection](assets/collection.png)
 
 ## Dev Containers
 This repository offers Dev Containers supports for:
