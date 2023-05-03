@@ -1,0 +1,8 @@
+[mongodb]
+wifi_ssid = "Wokwi-GUEST"
+wifi_psk = ""
+api_key = "api_key"
+data_source = "data_source"
+database = "database"
+collection = "collection"
+app_id = "app_ide"
