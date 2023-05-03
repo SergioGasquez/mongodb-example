@@ -5,6 +5,21 @@ Simple example built for [esp-rust-board](https://github.com/esp-rs/esp-rust-boa
 
 ![MongoDB Collection](assets/collection.png)
 
+To reproduce the example
+1. Setup MongoDB:
+   1. Create an application
+   2. Create a database
+   3. Create a collection
+2. Rename `cfg.toml.example` to `cfg.toml`
+3. Fill the `cfg.toml` with:
+   1. `wifi_ssid`: Wifi SSID
+   2. `wifi_pass`: Wifi password
+   3. `api_key`: MongoDB API Key
+   4. `data_source`: MongoDB Data Source
+   5. `database`: MongoDB Database name
+   6. `collection`: MongoDB Collection name
+   7. `app_id`: MongoDB App ID
+
 ## Dev Containers
 This repository offers Dev Containers supports for:
 -  [VS Code Dev Containers](https://code.visualstudio.com/docs/remote/containers#_quick-start-open-an-existing-folder-in-a-container)

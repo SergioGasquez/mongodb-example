@@ -81,7 +81,7 @@ fn main() -> Result<()> {
     loop {
         // Get the measurement result
         let measurement = sht.get_measurement_result().unwrap();
-        debug!(
+        info!(
             "Temp: {} Humidity: {}",
             measurement.temperature.as_degrees_celsius(),
             measurement.humidity.as_percent()
