@@ -1,5 +1,5 @@
 # MongoDB example
-[![Continuous Integration](https://github.com/SergioGasquez/mongodb-example/actions/workflows/CI.yml/badge.svg)](https://github.com/SergioGasquez/mongodb-example/actions/workflows/CI.yml)
+[![CI](https://github.com/SergioGasquez/mongodb-example/actions/workflows/CI.yml/badge.svg)](https://github.com/SergioGasquez/mongodb-example/actions/workflows/CI.yml)
 
 Simple example built for [esp-rust-board](https://github.com/esp-rs/esp-rust-board) that sends temperature and humidity to MongoDB, using POST method.
 
@@ -19,6 +19,25 @@ To reproduce the example
    5. `database`: MongoDB Database name
    6. `collection`: MongoDB Collection name
    7. `app_id`: MongoDB App ID
+
+## Testing MongoDB from terminal
+To publish data into your collection using `curl`:
+```
+curl https://data.mongodb-api.com/app/<app_id>/endpoint/data/v1/action/insertOne \
+    -H 'Content-Type: application/json' \
+    -H 'api-key: <api_key>' \
+    --data-raw \
+    '{
+  "dataSource": "<data_source>",
+  "database" : "<data_base>",
+  "collection" : "<collection>",
+  "document" : { "name": "Harvest",
+                 "breed": "Labrador",
+                 "age": 5 }
+}'
+```
+For more information, see [MongoDB documentation](https://www.mongodb.com/docs/atlas/api/data-api/#3.-send-a-data-api-request)
+
 
 ## Dev Containers
 This repository offers Dev Containers supports for:
