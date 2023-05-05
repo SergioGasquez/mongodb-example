@@ -1,0 +1,9 @@
+[wokwi]
+version = 1
+gdbServerPort = 3333
+elf = "target/riscv32imc-esp-espidf/debug/mongodb"
+firmware = "target/riscv32imc-esp-espidf/debug/mongodb"
+
+[[chip]]
+name = 'shtc3'                   # To use the chip in diagram.json, add a part with "chip-inverter" type.
+binary = 'chips/shtc3.chip.wasm'
